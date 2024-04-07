@@ -6,7 +6,7 @@ import _1 from './../public/1.png'
 import _2 from './../public/2.png'
 import _3 from './../public/3.png'
 import _4 from './../public/4.png'
-import logo from './../public/Logo.png'
+import logo from './../public/Logo2.png'
 import card1 from './../public/card1.png'
 import card2 from './../public/card2.png'
 import card3 from './../public/card3.png'
@@ -26,7 +26,7 @@ import card_3 from './../public/card_3.png'
 import frame1 from './../public/frame1.png'
 import frame2 from './../public/frame2.png'
 import frame3 from './../public/frame3.png'
-import { Container } from 'postcss'
+import sm from './../public/sm.png'
 const page = () => {
   return (
     <main>
@@ -146,54 +146,67 @@ const page = () => {
           <div><Image src={card_3} alt="cards" /></div>
         </div>
       </div>
-      <div className='w-auto h-[700px] flex bg-[#FFD4D0]'>
-        <div className='mt-20'>
-          <p className='text-2xl font-bold'>Get in Touch</p>
-          <p className='mt-6'>Have a question or a project in mind? I'd love to hear from you. Let's<br />chat and make something amazing together.</p>
-          <div className='flex flex-col gap-10 mt-20'>
-            <div><Image src={frame1} alt="frame1" /></div>
-            <div><Image src={frame2} alt="frame2" /></div>
-            <div><Image src={frame3} alt="frame3" /></div>
+      <div className='w-auto h-[700px] flex justify-center bg-[#FFD4D0]'>
+        <div className='flex justify-center mt-10'>
+          <div className='mt-20 ml-24'>
+            <p className='text-2xl font-bold'>Get in Touch</p>
+            <p className='mt-6'>Have a question or a project in mind? I'd love to hear from you. Let's<br />chat and make something amazing together.</p>
+            <div className='flex flex-col gap-10 mt-20'>
+              <div><Image src={frame1} alt="frame1" /></div>
+              <div><Image src={frame2} alt="frame2" /></div>
+              <div><Image src={frame3} alt="frame3" /></div>
+            </div>
           </div>
-        </div>
-        <div>
-          <div>
-            <form id='registor' method="post" className='w-[566px]'>
-              <br />
-              <input type='text' name='fname' placeholder='First Name' className='h-[45px] w-[410px] pl-4' />
-            </form>
-          </div>
-          <div>
-            <form id='registor' method="post" className='w-[566px]'>
-              <br />
-              <input type='email' name='fname' placeholder='Email' className='h-[45px] w-[410px] pl-4' />
-            </form>
-          </div>
-          <div>
-            <form id='registor' method="post" className='w-[566px]'>
-              <br />
-              <input type='number' name='fname' placeholder='Phone Number' className='h-[45px] w-[410px] pl-4' />
-            </form>
-          </div>
-          <div>
-            <form id='registor' method="post" className='w-[566px]'>
-              <br />
-              <input type='text' name='fname' placeholder='Your Message' className='h-[150px] w-[410px] pl-4 pb-[105px]' />
-            </form>
-            <button className='border mt-6 w-40 h-12 text-center border-black bg-black text-white'>Send Message</button>
+          <div className='mt-16 ml-10'>
+            <div>
+              <form id='registor' method="post" className='w-[566px]'>
+                <br />
+                <input type='text' name='fname' placeholder='First Name' className='h-[45px] w-[410px] pl-4' />
+              </form>
+            </div>
+            <div>
+              <form id='registor' method="post" className='w-[566px]'>
+                <br />
+                <input type='email' name='fname' placeholder='Email' className='h-[45px] w-[410px] pl-4' />
+              </form>
+            </div>
+            <div>
+              <form id='registor' method="post" className='w-[566px]'>
+                <br />
+                <input type='number' name='fname' placeholder='Phone Number' className='h-[45px] w-[410px] pl-4' />
+              </form>
+            </div>
+            <div>
+              <form id='registor' method="post" className='w-[566px]'>
+                <br />
+                <input type='text' name='fname' placeholder='Your Message' className='h-[150px] w-[410px] pl-4 pb-[105px]' />
+              </form>
+              <button className='border mt-6 w-40 h-12 text-center border-black bg-black text-white'>Send Message</button>
+            </div>
           </div>
         </div>
       </div>
       <div className='w-auto h-[350px] bg-[#1F1F1F]'>
-        <div className='flex justify between gap-8'>
-          <div className='flex justify-between gap-3'>
-            <p>About</p>
-            <p>Service</p>
+        <div className='flex justify-center'>
+          <div className='flex justify between gap-32 mt-20'>
+            <div className='flex justify-between gap-10 mt-3'>
+              <p className='font-bold text-xl text-white'>About</p>
+              <p className='font-bold text-xl text-white'>Service</p>
+            </div>
+            <div>
+              <Image src={logo} alt='logo' />
+            </div>
+            <div className='flex justify-between gap-10 mt-3'>
+              <p className='font-bold text-xl text-white'>Portfolio</p>
+              <p className='font-bold text-xl text-white'>Blog</p>
+            </div>
           </div>
         </div>
-        <div className='flex justify-between gap-3'>
-          <p>Portfolio</p>
-          <p>Blog</p>
+        <div className='flex justify-center'>
+          <p className='flex text-xl text-white mt-20'>Follow me on Social Media</p>
+        </div>
+        <div className='flex justify-center mt-6'>
+          <Image src={sm} alt='social media' />
         </div>
       </div>
     </main>
