@@ -27,6 +27,7 @@ import frame1 from './../public/frame1.png'
 import frame2 from './../public/frame2.png'
 import frame3 from './../public/frame3.png'
 import sm from './../public/sm.png'
+import send from './../public/send.png'
 const page = () => {
   return (
     <main>
@@ -34,16 +35,16 @@ const page = () => {
         <div className='ml-24 mr-24'>
           <div className='flex flex-wrap gap-8 justify-between mt-10'>
             <div>
-              <Image src={img} alt="image" />
+              <Image src={img} alt="image"/>
             </div>
             <div className='flex gap-12 flex-wrap'>
-              <div><p className='mt-2 font-bold text-xl font-mono'>About</p></div>
-              <div><p className='mt-2 font-bold text-xl font-mono'>Service</p></div>
-              <div><p className='mt-2 font-bold text-xl font-mono'>Portfolio</p></div>
-              <div><p className='mt-2 font-bold text-xl font-mono'>Blog</p></div>
+              <div><button className='mt-2 font-bold text-xl font-mono transition-all hover:text-[#FC3314] hover:text-2xl'>About</button></div>
+              <div><button className='mt-2 font-bold text-xl font-mono transition-all hover:text-[#FC3314] hover:text-2xl'>Service</button></div>
+              <div><button className='mt-2 font-bold text-xl font-mono transition-all hover:text-[#FC3314] hover:text-2xl'>Portfolio</button></div>
+              <div><button className='mt-2 font-bold text-xl font-mono transition-all hover:text-[#FC3314] hover:text-2xl'>Blog</button></div>
             </div>
             <div>
-              <button className='border-black w-40 h-12 bg-black text-white text-xl'>Let's Talk</button>
+              <button className='border-black w-40 h-12 bg-black text-white text-xl transition-all hover:bg-[#FC3314] hover:text-white hover:border-[#FC3314] hover:w-44 hover:h-14 duration-500'>Let's Talk</button>
             </div>
           </div>
           <div className='flex justify-between flex-wrap'>
@@ -52,8 +53,8 @@ const page = () => {
               <div><p className='mt-8 text-6xl'>Hi There, I'm</p><br /><p className='text-[#FC3314] mt-1 text-6xl'>M. Tahir</p></div>
               <div className='mt-6'><p>Welcome to my portfolio of captivating digital</p><p>experiences. Explore my work and let's create something</p><p>extraordinary together.</p></div>
               <div className='flex gap-5 mt-9 flex-wrap'>
-                <button className='border w-40 h-12 text-center border-black bg-black text-white'>Hire Me</button>
-                <button className='border w-40 h-12 text-center border-black bg-white text-black'>Portfolio</button>
+                <button className='border w-40 h-12 text-center border-black bg-black text-white transition-all hover:bg-[#FC3314] hover:text-black hover:w-44 hover:h-14 hover:border-[#FC3314] duration-500'>Hire Me</button>
+                <button className='border w-40 h-12 text-center border-black bg-white text-black transition-all hover:bg-[#FC3314] hover:text-white hover:border-[#FC3314] hover:w-44 hover:h-14 duration-500'>Portfolio</button>
               </div>
             </div>
             <div><Image src={pic} alt="image" className='align-bottom' />
@@ -102,18 +103,30 @@ const page = () => {
         </div>
       </div>
       <div className='w-auto h-[910px]'>
-        <div className='w-auto h-80 bg-[#FFD4D0]'>
+        <div className='w-auto h-80 bg-[#FFD4D0]'>``
           <div className='flex flex-col justify-center'>
             <p className='font-bold text-2xl text-black mt-14 text-center'>My Portfolio</p>
             <p className='text-center mt-6'>Explore my design services, from user interface and experience to prototyping and testing. Let's craft<br />exceptional digital experiences together.</p>
           </div>
           <div className='flex flex-wrap mt-10 ml-16 justify-around mr-16 gap-y-9'>
-            <div><Image src={card1} alt="cards" /></div>
-            <div><Image src={card2} alt="cards" /></div>
-            <div><Image src={card3} alt="cards" /></div>
-            <div><Image src={card4} alt="cards" /></div>
-            <div><Image src={card5} alt="cards" /></div>
-            <div><Image src={card6} alt="cards" /></div>
+            <div>
+              <div className='w-[350px] h-[290px]'><Image src={card1} alt='cards'/><div><p className='text-xl font-bold mt-5'>Educational Platform</p></div><div className='flex gap-20'><div><p className='mt-4'>Web Design / Usability Testing</p></div><Image src={send} alt='send'/></div></div>
+            </div>
+            <div>
+              <div className='w-[350px] h-[290px]'><Image src={card2} alt='cards'/><div><p className='text-xl font-bold mt-5'>Tavel App Design</p></div><div className='flex gap-28'><div><p className='mt-4'>UX Research/App Design</p></div><Image src={send} alt='send'/></div></div>
+            </div>
+            <div>
+              <div className='w-[350px] h-[290px]'><Image src={card3} alt='cards'/><div><p className='text-xl font-bold mt-5'>Personal Page</p></div><div className='flex gap-52'><div><p className='mt-4'>Web Design</p></div><Image src={send} alt='send'/></div></div>
+            </div>
+            <div>
+              <div className='w-[350px] h-[290px]'><Image src={card4} alt='cards'/><div><p className='text-xl font-bold mt-4'>Furniture Mobile App</p></div><div className='flex gap-52'><div><p className='mt-4'>App Design</p></div><Image src={send} alt='send'/></div></div>
+            </div>
+            <div>
+              <div className='w-[350px] h-[290px]'><Image src={card5} alt='cards'/><div><p className='text-xl font-bold mt-5'>Coffe Hous Landing Page</p></div><div className='flex gap-32'><div><p className='mt-4'>Ux design/Web Design</p></div><Image src={send} alt='send'/></div></div>
+            </div>
+            <div>
+              <div className='w-[350px] h-[290px]'><Image src={card6} alt='cards'/><div><p className='text-xl font-bold mt-5'>Home Service Page</p></div><div className='flex gap-32'><div><p className='mt-4'>Web Design/Marketing</p></div><Image src={send} alt='send'/></div></div>
+            </div>
           </div>
         </div>
       </div>
